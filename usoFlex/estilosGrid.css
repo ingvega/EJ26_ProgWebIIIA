@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,nav,div,footer{
+    border: 1px solid #000;
+}
+
+header{
+    height: 20vh;
+}
+
+nav{
+    height: 5vh;
+    margin-top: 15vh;
+}
+
+#cont_prin_1,#cont_prin_2{
+    height: 35vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+#cont_prin_1 .h1:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+#cont_prin_2{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer{
+    height: 10vh;
+}
